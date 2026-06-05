@@ -81,6 +81,7 @@ public:
     // TODO 5: Override area().  Area of a rectangle = width * height.
     double area() const override{
         return width*height;
+    }
 };
 
 // --- Derived class: Square (inherits from Rectangle) ------------
@@ -106,7 +107,7 @@ public:
 //         An empty vector returns 0.0.
 double totalArea(const std::vector<Shape*>& shapes) {
     // TODO
-    double sum = 0.0
+    double sum = 0.0;
     for(const Shape *s :shapes){
         sum += s->area();
     }
